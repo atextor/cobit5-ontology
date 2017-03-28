@@ -1,0 +1,10 @@
+#+TITLE: COBIT 5 Ontology
+#+AUTHOR: Andreas Textor
+#+EMAIL: mail@atextor.de
+#+DATE: 2017-03-28
+
+This OWL ontology models core concepts and relationships of [[https://www.isaca.org/COBIT/pages/default.aspx][COBIT 5]], the leading
+framework for the governance and management of enterprise IT.
+
+The ontology is provided as-is for educational purposes and is licensed under [[https://creativecommons.org/licenses/by-sa/3.0/][CC BY-SA 3.0]].
+The ontology and the author are not affiliated with [[http://www.isaca.org/about-isaca/Pages/default.aspx][ISACA]].
