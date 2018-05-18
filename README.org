@@ -8,3 +8,16 @@ framework for the governance and management of enterprise IT.
 
 The ontology is provided as-is for educational purposes and is licensed under [[https://creativecommons.org/licenses/by-sa/3.0/][CC BY-SA 3.0]].
 The ontology and the author are not affiliated with [[http://www.isaca.org/about-isaca/Pages/default.aspx][ISACA]].
+
+* Related Publications
+
+** Textor, Andreas: Verknüpfung von Domänenwissen für ein Ontologie-basiertes IT-Management, University of Kassel, [[http://nbn-resolving.de/urn:nbn:de:hebis:34-2018051455498][Dissertation]], 2018.
+
+** Textor, Andreas ; Geihs, Kurt ; Kroeger, Reinhold: Semantic Models for Bridging Domains in Automated IT Management: Lessons Learned. In: Proceedings of 2017 International Conference on Networked Systems (NetSys), IEEE. Göttingen, Germany, March 2017. – ISBN 978–1–5090–4394–1.
+
+** Textor, Andreas ; Geihs, Kurt: Calculation of COBIT Metrics Using a Formal Ontology. In: Appleton, Owen (Ed.) ; Brenner, Michael (Ed.) ; Schaaf, Thomas (Ed.) ; Tortonesi, Mauro (Ed.) ; De Turck, Filip (Ed.) ; Groza, Voicu (Ed.) ; dos Santos, P. Carlos R. (Ed.): Proceedings of the 10th International Workshop on Advanced IT Service Management (BDIM), IEEE. Ottawa, Canada, May 2015. – ISBN 978–3–901882–76–0.
+
+** Textor, Andreas: Ein Ansatz für eine Ontologie-basierte Verbindung von IT Monitoring und IT Governance. In: Plödereder, Erhard (Ed.) ; Grunske, Lars (Ed.) ; Schneider, Erik (Ed.) ; Ull, Dominik (Ed.): 44. Jahrestagung der Gesellschaft für Informatik, Workshop Management komplexer IT-Systeme und Anwendungen Bd. 232, Gesellschaft für Informatik. Stuttgart, Germany, 2014. – ISBN 978–3–88579–626–8.
+
+* Author
+Andreas Textor <[[mailto:mail@atextor.de][mail@atextor.de]]>
