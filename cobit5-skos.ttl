@@ -1,0 +1,149 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cobit5: <http://purl.org/atextor/ontology/cobit5#> .
+
+<http://purl.org/atextor/ontology/cobit5-skos> a owl:Ontology;
+	rdfs:label "COBIT 5 SKOS Mapping";
+	dcterms:title "COBIT 5 SKOS Mapping";
+	dcterms:description "This ontology reifies the structural COBIT 5 concepts from the COBIT 5 ontology and expresses the relations between them using the Simple Knowledge Organization System (SKOS)."@en;
+	dcterms:creator "Andreas Textor";
+	dcterms:issued "2020-03-01"^^xsd:date;
+	dcterms:rights "Creative Commons Attribution Share Alike 3.0 License";
+	dcterms:subject "IT Governance";
+	owl:versionInfo "1.0.0";
+	owl:imports <http://purl.org/atextor/ontology/cobit5>,
+	            <http://www.w3.org/2004/02/skos/core> .
+
+skos:inScheme a owl:ObjectProperty .
+
+skos:broader a owl:ObjectProperty .
+
+skos:narrower a owl:ObjectProperty .
+
+cobit5:Activity a owl:NamedIndividual,
+		skos:Concept;
+	skos:inScheme cobit5:COBIT5 .
+
+cobit5:BSCDimension a owl:NamedIndividual,
+		skos:Concept;
+	skos:inScheme cobit5:COBIT5 .
+
+cobit5:COBIT5 a skos:ConceptScheme .
+
+cobit5:EnterpriseGoal a owl:NamedIndividual,
+		skos:Concept;
+	skos:broader cobit5:Goal;
+	skos:inScheme cobit5:COBIT5 .
+
+cobit5:EnterpriseGoalMetric a owl:NamedIndividual,
+		skos:Concept;
+	skos:broader cobit5:Metric;
+	skos:inScheme cobit5:COBIT5 .
+
+cobit5:Goal a owl:NamedIndividual,
+		skos:Concept;
+	skos:narrower cobit5:EnterpriseGoal,
+		cobit5:ITGoal,
+		cobit5:ProcessGoal;
+	skos:inScheme cobit5:COBIT5 .
+
+cobit5:GovernanceObjective a owl:NamedIndividual,
+		skos:Concept;
+	skos:inScheme cobit5:COBIT5 .
+
+cobit5:GovernancePractice a owl:NamedIndividual,
+		skos:Concept;
+	skos:broader cobit5:Practice;
+	skos:inScheme cobit5:COBIT5 .
+
+cobit5:ITGoal a owl:NamedIndividual,
+		skos:Concept;
+	skos:broader cobit5:Goal;
+	skos:inScheme cobit5:COBIT5 .
+
+cobit5:ITGoalMetric a owl:NamedIndividual,
+		skos:Concept;
+	skos:broader cobit5:Metric;
+	skos:inScheme cobit5:COBIT5 .
+
+cobit5:ManagementPractice a owl:NamedIndividual,
+		skos:Concept;
+	skos:broader cobit5:Practice;
+	skos:inScheme cobit5:COBIT5 .
+
+cobit5:Metric a owl:NamedIndividual,
+		skos:Concept;
+	skos:narrower cobit5:EnterpriseGoalMetric,
+		cobit5:ITGoalMetric,
+		cobit5:ProcessGoalMetric;
+	skos:inScheme cobit5:COBIT5 .
+
+cobit5:PerformanceAttribute a owl:NamedIndividual,
+		skos:Concept;
+	skos:inScheme cobit5:COBIT5 .
+
+cobit5:Practice a owl:NamedIndividual,
+		skos:Concept;
+	skos:narrower cobit5:GovernancePractice,
+		cobit5:ManagementPractice;
+	skos:inScheme cobit5:COBIT5 .
+
+cobit5:ProcessCapabilityLevel a owl:NamedIndividual,
+		skos:Concept;
+	skos:inScheme cobit5:COBIT5 .
+
+cobit5:ProcessCategory a owl:NamedIndividual,
+		skos:Concept;
+	skos:inScheme cobit5:COBIT5 .
+
+cobit5:ProcessGoal a owl:NamedIndividual,
+		skos:Concept;
+	skos:broader cobit5:Goal;
+	skos:inScheme cobit5:COBIT5 .
+
+cobit5:ProcessGoalMetric a owl:NamedIndividual,
+		skos:Concept;
+	skos:broader cobit5:Metric;
+	skos:inScheme cobit5:COBIT5 .
+
+cobit5:Role a owl:NamedIndividual,
+		skos:Concept;
+	skos:inScheme cobit5:COBIT5 .
+
+cobit5:StakeholderNeed a owl:NamedIndividual,
+		skos:Concept;
+	skos:inScheme cobit5:COBIT5 .
+
+cobit5:WorkProduct a owl:NamedIndividual,
+		skos:Concept;
+	skos:inScheme cobit5:COBIT5 .
+
+[ a owl:AllDifferent;
+	owl:distinctMembers (
+		cobit5:Activity
+		cobit5:BSCDimension
+		cobit5:COBIT5
+		cobit5:EnterpriseGoal
+		cobit5:EnterpriseGoalMetric
+		cobit5:Goal
+		cobit5:GovernanceObjective
+		cobit5:GovernancePractice
+		cobit5:ITGoal
+		cobit5:ITGoalMetric
+		cobit5:ManagementPractice
+		cobit5:Metric
+		cobit5:PerformanceAttribute
+		cobit5:Practice
+		cobit5:ProcessCapabilityLevel
+		cobit5:ProcessCategory
+		cobit5:ProcessGoal
+		cobit5:ProcessGoalMetric
+		cobit5:Role
+		cobit5:StakeholderNeed
+		cobit5:WorkProduct
+	)
+] .
